@@ -1,0 +1,29 @@
+<div class="card" style="width: 18rem">
+  <img
+    class="card-img-top"
+    [src]="item.id != 9 ? item.urlToImage : 'assets/images/MainAfter.webp'"
+    alt="Card image cap"
+  />
+  <div class="card-body">
+    <p class="card-title">{{ item.title }}</p>
+    <!-- <p class="card-text">
+      {{item.description}}
+    </p> -->
+    <h6 class="card-subtitle mb-2 text-muted">
+      <span
+        ><img class="calendar-img" src="assets/images/calendar-337.png" /></span
+      >{{ item.publishedDate }}
+    </h6>
+  </div>
+  <div class="d-flex flex-row tag-row">
+    <div>
+      <span class="tag">{{
+        item.categoryID | categoryName : categoryList
+      }}</span>
+    </div>
+    <div class="images">
+      <img class="pointer" src="assets/images/svg/blue-heart.svg" />
+      <img class="pointer" src="assets/images/share.webp" />
+    </div>
+  </div>
+</div>

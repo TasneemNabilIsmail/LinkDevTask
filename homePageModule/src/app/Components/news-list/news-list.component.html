@@ -1,0 +1,29 @@
+<div
+  class="container container-sm container-md container-lg container-xl container-xxl"
+>
+  <h3 class="text-center">Media</h3>
+  <h1 class="text-center">Top News</h1>
+  <div class="text-center">
+    <button class="btn btn-secondary pointer app-tags active-btn" (click)="searchByCategory('0')" id="0">
+      All News
+    </button>
+    <button
+      class="btn btn-secondary pointer app-tags"
+      *ngFor="let category of categoryList"
+      [id]="category.id"
+      (click)="searchByCategory(category.id)"
+    >
+      {{ category.name }}
+    </button>
+  </div>
+  <div class="row">
+    <div
+      class="col-12 col-sm-12 col-md-6 col-lg-4"
+      *ngFor="let new of filteredList"
+    >
+      <app-news-card [item]="new" [categoryList]="categoryList"></app-news-card>
+    </div>
+  </div>
+
+  <button class="btn btn-light orange-btn"> View All News</button>
+</div>

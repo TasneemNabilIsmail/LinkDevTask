@@ -1,0 +1,95 @@
+:host {
+
+  h1 {
+    font-family: VolkhovBold;
+    margin: 3rem 0;
+    color:#181E4B
+  }
+  p {
+    max-width: 450px;
+    margin-bottom: 3rem;
+    min-height: 72px;
+    color:#5E6282
+  }
+  .svg-img {
+    position: absolute;
+    top: -17%;
+    right: -10%;
+    z-index: -1;
+  }
+  .main-row {
+    margin-top: 70px;
+    .find-more-btn {
+      color: white;
+      background-color: #ff7c16;
+      padding: 20px 30px;
+    }
+    .play-demo {
+      img {
+        width: 100px;
+      }
+    }
+
+    .small-circle {
+      width: 30px;
+      height: 30px;
+      border-radius: 30px;
+      display: inline-block;
+      cursor: pointer;
+    }
+    .large-circle {
+      width: 40px;
+      height: 40px;
+      border-radius: 40px;
+    }
+    .circle1 {
+      background-color: #f215b6;
+      @extend .small-circle;
+    }
+    .circle2 {
+      background-color: #a6e51c;
+      @extend .small-circle;
+    }
+    .circle3 {
+      background-color: #ff7c16;
+      @extend .small-circle;
+    }
+
+    .dotted-img {
+      margin-top: -15px;
+    }
+    .main-img-parent {
+      text-align: center;
+      .main-img {
+        height: 500px;
+      }
+    }
+  }
+  .pink {
+    fill: #ef16b4;
+  }
+  .green {
+    fill: #6cd54ffa;
+  }
+  .orange {
+    fill: #f59244;
+  }
+
+  @media screen and (max-width:991px) {
+    .dotted-img {
+      width: 95px;
+    }
+    .play-demo{
+      display:block;
+      margin: 20px 0 30px -26px;
+    }
+  }
+  @media screen and (min-width:992px) {
+    .dotted-img {
+      width: 145px;
+    }
+    .play-demo{
+
+    }
+  }
+}

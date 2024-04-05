@@ -1,0 +1,26 @@
+:host {
+  ul {
+    margin-left: auto;
+  }
+
+  button.dropdown-toggle {
+    background-color: transparent;
+    border: none;
+  }
+  .dropdown-menu {
+    --bs-dropdown-min-width: 4rem;
+  }
+
+  @media screen and (max-width: 767px) {
+  }
+  @media screen and (min-width: 768px) {
+    li.login {
+      margin-left: 2.5rem;
+    }
+    li.signup {
+      border: 1px solid #adada6;
+      border-radius: 5px;
+      margin: 0 2.5rem;
+    }
+  }
+}

@@ -1,1 +1,44 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+  overflow-x: hidden;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: VolkhovRegular;
+  src: url(assets/fonts/Volkhov/Volkhov-Regular.ttf);
+}
+@font-face {
+  font-family: VolkhovBold;
+  src: url(assets/fonts/Volkhov/Volkhov-Bold.ttf);
+}
+@font-face {
+  font-family: VolkhovItalicRegular;
+  src: url(assets/fonts/Volkhov/Volkhov-Italic.ttf);
+}
+@font-face {
+  font-family: VolkhovItalicBold;
+  src: url(assets/fonts/Volkhov/Volkhov-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: PoppinsRegular;
+  src: url(assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: PoppinsBold;
+  src: url(assets/fonts/Poppins/Poppins-Bold.ttf);
+}
+@media screen and (max-width:991px) {
+  .navbar {
+    --bs-navbar-nav-link-padding-x: .5rem;
+  }
+}
+@media screen and (min-width:992px) {
+  .navbar {
+    --bs-navbar-nav-link-padding-x: 2rem;
+  }
+}

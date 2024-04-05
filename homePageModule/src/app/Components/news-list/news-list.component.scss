@@ -1,0 +1,35 @@
+:host{
+  h3{
+    color:#5E6282;
+    margin: 20px 0px;
+  }
+  h1{
+    color:#14183E;
+  }
+  button.app-tags{
+    background-color: #E3E3E3;
+    color:#0F526E;
+    border:none;
+    padding: 10px 30px;
+    margin:20px 20px 50px 0px;
+    border-radius: 14px;
+    &:hover{
+      background-color: #0ECEFF;
+      color:white
+    }
+    &.active-btn{
+      background-color: #0ECEFF;
+      color:white
+    }
+  }
+
+  .orange-btn{
+    color: white;
+    background-color: #f59244;
+    border-radius: 10px;
+    padding: 10px 30px;
+    margin: auto;
+    font-size: 24px;
+    display: block;
+  }
+}
